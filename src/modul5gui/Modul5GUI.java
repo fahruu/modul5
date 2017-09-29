@@ -7,7 +7,7 @@ package modul5gui;
 
 /**
  *
- * @author kevin
+ * @author Fahru
  */
 public class Modul5GUI {
 

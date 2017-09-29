@@ -7,7 +7,7 @@ package Kuis2;
 
 /**
  *
- * @author kevin
+ * @author Fahru
  */
 public class Kuis2 extends javax.swing.JFrame {
 
@@ -45,24 +45,48 @@ public class Kuis2 extends javax.swing.JFrame {
         Hasil = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Pembayaran");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(131, 11, 132, 29);
+        getContentPane().add(hb1);
+        hb1.setBounds(178, 58, 162, 30);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText(" Harga Barang 1");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(61, 58, 120, 20);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Harga Barang 2");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(65, 96, 120, 20);
+        getContentPane().add(hb2);
+        hb2.setBounds(178, 96, 162, 30);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Harga Barang 3");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(65, 134, 120, 20);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Harga Barang 4");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(65, 172, 130, 20);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Diskon");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(119, 210, 60, 20);
+        getContentPane().add(hb3);
+        hb3.setBounds(178, 134, 162, 30);
+        getContentPane().add(hb4);
+        hb4.setBounds(178, 172, 162, 30);
+        getContentPane().add(diskon);
+        diskon.setBounds(178, 210, 162, 30);
 
         Proses.setBackground(new java.awt.Color(0, 153, 204));
         Proses.setText("Proses");
@@ -71,6 +95,8 @@ public class Kuis2 extends javax.swing.JFrame {
                 ProsesActionPerformed(evt);
             }
         });
+        getContentPane().add(Proses);
+        Proses.setBounds(76, 248, 65, 23);
 
         Hapus.setBackground(new java.awt.Color(0, 153, 204));
         Hapus.setText("Hapus");
@@ -79,6 +105,8 @@ public class Kuis2 extends javax.swing.JFrame {
                 HapusActionPerformed(evt);
             }
         });
+        getContentPane().add(Hapus);
+        Hapus.setBounds(159, 248, 63, 23);
 
         Keluar.setBackground(new java.awt.Color(0, 153, 204));
         Keluar.setText("Keluar");
@@ -87,83 +115,18 @@ public class Kuis2 extends javax.swing.JFrame {
                 KeluarActionPerformed(evt);
             }
         });
+        getContentPane().add(Keluar);
+        Keluar.setBounds(240, 248, 63, 23);
 
         Hasil.setColumns(20);
         Hasil.setRows(5);
         jScrollPane1.setViewportView(Hasil);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(hb1)
-                                    .addComponent(hb2)
-                                    .addComponent(hb3, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                                    .addComponent(diskon)
-                                    .addComponent(hb4)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(Proses)
-                        .addGap(18, 18, 18)
-                        .addComponent(Hapus)
-                        .addGap(18, 18, 18)
-                        .addComponent(Keluar)))
-                .addContainerGap(60, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hb1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(hb2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(hb3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(hb4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(diskon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Proses)
-                    .addComponent(Hapus)
-                    .addComponent(Keluar))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(28, Short.MAX_VALUE))
-        );
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(61, 289, 279, 115);
 
-        pack();
+        setSize(new java.awt.Dimension(416, 471));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void ProsesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProsesActionPerformed
